@@ -17,8 +17,8 @@ import (
 )
 
 func main() {
-	fmt.Printf("hello world i am printing with go\n")
+	fmt.Printf("hello world i am printing with Go\n")
 	cstr := C.CString("hello world i am printing with C")
-	C.foobar(cstr)
+	C.printMsg(cstr)
 	C.free(unsafe.Pointer(cstr)) // C string allocated in C memory, i.e. we need to free
 }

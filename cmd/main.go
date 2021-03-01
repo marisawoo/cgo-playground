@@ -8,7 +8,6 @@ void printMsg(char *str) {
 }
 */
 import "C"
-
 // comments above this line will be interpreted as C code. must be directly above, no spaced newline.
 // import "C" must also be isolated from other imports, otherwise it will fail to recognize we want to call C code
 import (
